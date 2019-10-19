@@ -1,0 +1,19 @@
+{
+  "name": "BEDeforestation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/build-deforestation-application/BE_Deforestation.git",
+  "author": "<tom@edgegluer.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.21.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "server": "^1.0.19"
+  }
+}
