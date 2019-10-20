@@ -10,10 +10,15 @@
   "author": "<tom@edgegluer.com>",
   "license": "MIT",
   "dependencies": {
+    "add": "^2.0.6",
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "helmet": "^3.21.1",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.4",
-    "server": "^1.0.19"
+    "router": "^1.3.3",
+    "server": "^1.0.19",
+    "yarn": "^1.19.1"
   }
 }
