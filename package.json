@@ -1,10 +1,10 @@
 {
   "name": "BEDeforestation",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "server": "nodemon index.js",
-    "start": "node index.js"
+    "server": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": "https://github.com/build-deforestation-application/BE_Deforestation.git",
   "author": "<tom@edgegluer.com>",

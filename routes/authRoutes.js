@@ -33,14 +33,13 @@ router.post("/register", async (req, res) => {
   console.log(newUser);
   try {
     console.log("register try");
-    const entree = await db.insert(newUser);
+    const entree = await db.insert(newUser)
     console.log("after insert", entree);
-
-    res.status(200).send(newUser);
+    res.status(200).send(entree);
   } catch (error) {
     res.status(500).json({
-      message: "Server Error",
-      error
+      message: ("Server Error",
+      error)
     });
   }
 });
