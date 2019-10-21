@@ -7,10 +7,10 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const logger = require("morgan");
 const helmet = require("helmet");
-const knex = require("./db/knex");
+const knex = require("./Deforestation/db/knex");
 
-const auth = require("./routes/authRoutes");
-const query = require("./routes/queryRoutes");
+const auth = require("./Deforestation/routes/authRoutes");
+const query = require("./Deforestation/routes/queryRoutes");
 
 const app = express();
 
