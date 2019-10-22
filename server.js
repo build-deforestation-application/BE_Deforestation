@@ -12,20 +12,20 @@ const knex = require("./db/knex");
 const auth = require("./routes/authRoutes");
 const query = require("./routes/queryRoutes");
 
-const app = express();
+const server = express();
 
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
+//  server.set("views", path.join(__dirname, "views"));
+//  server.set("view engine", "ejs");
 
-app.use(helmet());
-app.use(logger("dev"));
-app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+server.use(helmet());
+server.use(logger("dev"));
+server.use(cors());
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/query", query);
-app.use("/auth", auth);
+server.use("/query", query);
+server.use("/auth", auth);
 
-app.listen(port, function() {
+server.listen(port, function() {
   console.log("listening on port: ", port);
 });
