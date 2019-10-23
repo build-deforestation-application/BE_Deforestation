@@ -129372,9 +129372,10 @@ exports.seed = function(knex) {
   return knex('Forest_dataset_1').del()
     .then(function () {
           return knex('Forest_dataset_1').insert(arr)
-          // .then(function(){
-          //   return knex('Forest_dataset_2').insert(arr2)
+          .then(function(){
+            return knex('Forest_dataset_2').insert(arr2)
         });
    
-    }
+    })
 
+  }

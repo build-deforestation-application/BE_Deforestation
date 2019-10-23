@@ -7,10 +7,10 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const logger = require("morgan");
 const helmet = require("helmet");
-const knex = require("../db/knex");
+const knex = require("./db/knex");
 
-const auth = require("../routes/authRoutes");
-const query = require("../routes/queryRoutes");
+const auth = require("./routes/authRoutes");
+const query = require("./routes/queryRoutes");
 
 const server = express();
 
@@ -26,9 +26,13 @@ server.use(bodyParser.urlencoded({ extended: false }));
 server.use("/query", query);
 server.use("/auth", auth);
 
-server.get('/',(req, res) =>{
-  res.status(200).json({message:'hi from the Deforestation Backend this route is not in use'})
-})
+server.get("/", (req, res) => {
+  res
+    .status(200)
+    .json({
+      message: "hi from the Deforestation Backend this route is not in use"
+    });
+});
 
 server.listen(port, function() {
   console.log("listening on port: ", port);
