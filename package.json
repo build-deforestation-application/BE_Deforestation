@@ -17,6 +17,7 @@
     "fast-csv": "^3.4.0",
     "fs": "^0.0.1-security",
     "helmet": "^3.21.1",
+    "i": "^0.3.6",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.19.5",
     "knex-csv-seeder": "^0.4.1",
@@ -27,5 +28,12 @@
     "server": "^1.0.19",
     "sqlite3": "^4.1.0",
     "yarn": "^1.19.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }

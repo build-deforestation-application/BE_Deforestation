@@ -22445,102 +22445,16 @@ exports.seed = function(knex) {
   // Deletes ALL existing entries
   return knex('Forest_dataset_1').del()
     .then(function () {
-      // Inserts seed entries
      
-        // for(let i = 0; i < arr.length; i++ ){
           return knex('Forest_dataset_1').insert(arr)
-            // {CountryName:(arr[i]['CountryName'])},
-            // {CountryCode:(arr[i]['CountryCode'])},
-            // {IndicatorName:(arr[i]['Indicator Name'])},
-            // {IndicatorCode:(arr[i]['IndicatorCode'])},
-            // {"1990": (arr[i]['1990'])},
-            // {"1991": (arr[i]['1991'])},
-            // {"1992": (arr[i]['1992'])},
-            // {"1993": (arr[i]['1993'])},
-            // {"1994": (arr[i]['1994'])},
-            // {"1995": (arr[i]['1995'])},
-            // {"1996": (arr[i]['1996'])},
-            // {"1997": (arr[i]['1997'])},
-            // {"1998": (arr[i]['1998'])},
-            // {"1999": (arr[i]['1999'])},
-            // {"2000": (arr[i]['2000'])},
-            // {"2001": (arr[i]['2001'])},
-            // {"2002": (arr[i]['2002'])},
-            // {"2003": (arr[i]['2003'])},
-            // {"2004": (arr[i]['2004'])},
-            // {"2005": (arr[i]['2005'])},
-            // {"2006": (arr[i]['2006'])},
-            // {"2007": (arr[i]['2007'])},
-            // {"2008": (arr[i]['2008'])},
-            // {"2009": (arr[i]['2009'])},
-            // {"2010": (arr[i]['2010'])},
-            // {"2011": (arr[i]['2011'])},
-            // {"2012": (arr[i]['2012'])},
-            // {"2013": (arr[i]['2013'])},
-            // {"2014": (arr[i]['2014'])},
-            // {"2015": (arr[i]['2015'])},
-            // {"2016": (arr[i]['2016'])},
-            // {"yoy_delta_1991": (arr[i]["yoy_delta_1991"])},
-            // {"yoy_delta_1992": (arr[i]["yoy_delta_1992"])},
-            // {"yoy_delta_1993": (arr[i]["yoy_delta_1993"])},
-            // {"yoy_delta_1994": (arr[i]["yoy_delta_1994"])},
-            // {"yoy_delta_1995": (arr[i]["yoy_delta_1995"])},
-            // {"yoy_delta_1996": (arr[i]["yoy_delta_1996"])},
-            // {"yoy_delta_1997": (arr[i]["yoy_delta_1997"])},
-            // {"yoy_delta_1998": (arr[i]["yoy_delta_1998"])},
-            // {"yoy_delta_1999": (arr[i]["yoy_delta_1999"])},
-            // {"yoy_delta_2000": (arr[i]["yoy_delta_2000"])},
-            // {"yoy_delta_2001": (arr[i]["yoy_delta_2001"])},
-            // {"yoy_delta_2002": (arr[i]["yoy_delta_2002"])},
-            // {"yoy_delta_2003": (arr[i]["yoy_delta_2003"])},
-            // {"yoy_delta_2004": (arr[i]["yoy_delta_2004"])},
-            // {"yoy_delta_2005": (arr[i]["yoy_delta_2005"])},
-            // {"yoy_delta_2006": (arr[i]["yoy_delta_2006"])},
-            // {"yoy_delta_2007": (arr[i]["yoy_delta_2007"])},
-            // {"yoy_delta_2008": (arr[i]["yoy_delta_2008"])},
-            // {"yoy_delta_2009": (arr[i]["yoy_delta_2009"])},
-            // {"yoy_delta_2010": (arr[i]["yoy_delta_2010"])},
-            // {"yoy_delta_2011": (arr[i]["yoy_delta_2011"])},
-            // {"yoy_delta_2012": (arr[i]["yoy_delta_2012"])},
-            // {"yoy_delta_2013": (arr[i]["yoy_delta_2013"])},
-            // {"yoy_delta_2014": (arr[i]["yoy_delta_2014"])},
-            // {"yoy_delta_2015": (arr[i]["yoy_delta_2015"])},
-            // {"yoy_delta_2016": (arr[i]["yoy_delta_2016"])},
-            // {"total_delta_1991": (arr[i]["total_delta_1991"])},
-            // {"total_delta_1992": (arr[i]["total_delta_1992"])},
-            // {"total_delta_1993": (arr[i]["total_delta_1993"])},
-            // {"total_delta_1994": (arr[i]["total_delta_1994"])},
-            // {"total_delta_1995": (arr[i]["total_delta_1995"])},
-            // {"total_delta_1996": (arr[i]["total_delta_1996"])},
-            // {"total_delta_1997": (arr[i]["total_delta_1997"])},
-            // {"total_delta_1998": (arr[i]["total_delta_1998"])},
-            // {"total_delta_1999": (arr[i]["total_delta_1999"])},
-            // {"total_delta_2000": (arr[i]["total_delta_2000"])},
-            // {"total_delta_2001": (arr[i]["total_delta_2001"])},
-            // {"total_delta_2002": (arr[i]["total_delta_2002"])},
-            // {"total_delta_2003": (arr[i]["total_delta_2003"])},
-            // {"total_delta_2004": (arr[i]["total_delta_2004"])},
-            // {"total_delta_2005": (arr[i]["total_delta_2005"])},
-            // {"total_delta_2006": (arr[i]["total_delta_2006"])},
-            // {"total_delta_2007": (arr[i]["total_delta_2007"])},
-            // {"total_delta_2008": (arr[i]["total_delta_2008"])},
-            // {"total_delta_2009": (arr[i]["total_delta_2009"])},
-            // {"total_delta_2010": (arr[i]["total_delta_2010"])},
-            // {"total_delta_2011": (arr[i]["total_delta_2011"])},
-            // {"total_delta_2012": (arr[i]["total_delta_2012"])},
-            // {"total_delta_2013": (arr[i]["total_delta_2013"])},
-            // {"total_delta_2014": (arr[i]["total_delta_2014"])},
-            // {"total_delta_2015": (arr[i]["total_delta_2015"])},
-            // {"total_delta_2016": (arr[i]["total_delta_2016"])}
-          // ])
-
-
-
-            // }
-        // return knex('Forest_dataset_1').insert([
-        // {id: 1, colName: 'rowValue1'},
-        // {id: 2, colName: 'rowValue2'},
-        // {id: 3, colName: 'rowValue3'}
-      // ]);
+      
     });
 };
+// exports.seed = function(knex) {
+//   // Deletes ALL existing entries
+//   return knex('Forest_dataset_2').del()
+//     .then(function () {
+//       return knex('Forest_dataset_2').insert(arr)
+    
+//     });
+// };
