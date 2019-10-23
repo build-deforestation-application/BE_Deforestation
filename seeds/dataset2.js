@@ -106923,7 +106923,7 @@ const arr2 = [
  ]
 
 
-exports.seed = function(knex) {
+exports.seed2 = function(knex) {
   // Deletes ALL existing entries
   return knex('Forest_dataset_2').del()
     .then(function () {
