@@ -129369,11 +129369,11 @@ const arr2 = [
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('Forest_dataset_1').del()
+  return knex('ForestDatasetone').del()
     .then(function () {
-          return knex('Forest_dataset_1').insert(arr)
+          return knex('ForestDatasetone').insert(arr)
           .then(function(){
-            return knex('Forest_dataset_2').insert(arr2)
+            return knex('ForestDatasettwo').insert(arr2)
         });
    
     })

@@ -1,5 +1,5 @@
 exports.up = function(knex) {
-  return knex.schema.createTable("Forest_dataset_1", table => {
+  return knex.schema.createTable("ForestDatasetone", table => {
     table.increments("Id");
     table.string("CountryName");
     table.string("CountryCode");
@@ -88,5 +88,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  return knex.schema.dropTableIfExists("Forest_dataset_1");
+  return knex.schema.dropTableIfExists("ForestDatasetone");
 };

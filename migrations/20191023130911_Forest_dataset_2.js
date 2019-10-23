@@ -1,5 +1,5 @@
 exports.up = function(knex) {
-  return knex.schema.createTable("Forest_dataset_2", table => {
+  return knex.schema.createTable("ForestDatasettwo", table => {
     table.increments("Id");
     table.string("CountryName");
     table.string("CountryCode");
@@ -18,7 +18,7 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  return knex.schema.dropTableIfExists("Forest_dataset_2");
+  return knex.schema.dropTableIfExists("ForestDatasettwo");
 };
 // {
 //     "CountryName": "Kosovo",
