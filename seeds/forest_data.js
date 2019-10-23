@@ -129373,7 +129373,7 @@ exports.seed = function(knex) {
     .then(function () {
           return knex('Forest_dataset_1').insert(arr)
           .then(function(){
-            return knex('forest_dataset_2').insert(arr2)
+            return knex('Forest_dataset_2').insert(arr2)
         });
    
     })
