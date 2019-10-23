@@ -129376,5 +129376,5 @@ exports.seed = function(knex) {
           //   return knex('Forest_dataset_2').insert(arr2)
         });
    
-    })
-};
+    }
+
