@@ -11,10 +11,10 @@ module.exports = {
 };
 
 function get() {
-  console.log("here", db("Forest_dataset_1"));
-  return db("Forest_dataset_1");
+  console.log("here", db("ForestDatasetone"));
+  return db("ForestDatasetone");
 }
 function getsecond() {
-  console.log("here", db("Forest_dataset_2"));
-  return db("Forest_dataset_2");
+  console.log("here", db("ForestDatasettwo"));
+  return db("ForestDatasettwo");
 }
