@@ -22450,11 +22450,3 @@ exports.seed = function(knex) {
       
     });
 };
-// exports.seed = function(knex) {
-//   // Deletes ALL existing entries
-//   return knex('Forest_dataset_2').del()
-//     .then(function () {
-//       return knex('Forest_dataset_2').insert(arr)
-    
-//     });
-// };
