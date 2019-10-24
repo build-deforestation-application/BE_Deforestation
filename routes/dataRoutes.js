@@ -15,3 +15,11 @@ router.get("/", function(req, res) {
 });
 
 module.exports = router;
+//exports.seed = function(knex) {
+  // Deletes ALL existing entries
+//   return knex('ForestDatasetone').del()
+//     .then(function () {
+//       // Inserts seed entries
+//       return knex('ForestDatasetone').insert(arr);
+//     });
+// };
