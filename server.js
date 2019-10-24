@@ -11,6 +11,7 @@ const knex = require("./db/knex");
 
 const auth = require("./routes/authRoutes");
 const query = require("./routes/queryRoutes");
+const dataSet = require("./routes/dataRoutes");
 
 const server = express();
 
@@ -25,6 +26,7 @@ server.use(bodyParser.urlencoded({ extended: false }));
 server.use(express.json());
 server.use("/query", query);
 server.use("/auth", auth);
+server.use("/data", dataSet);
 
 server.get("/", (req, res) => {
   res.status(200).json({

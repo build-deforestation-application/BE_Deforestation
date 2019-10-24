@@ -2,7 +2,7 @@ exports.up = function(knex) {
   return knex.schema.createTable("ForestDatasetone", table => {
     table.increments("Id");
     table.string("Country_Code");
-    table.integer("Year");
+    table.integer("Year")
     table.string("Forest_Area");
     table.string("Forest_pct");
     table.string("Forest_pct_yoy_change");
@@ -16,6 +16,24 @@ exports.up = function(knex) {
     table.decimal("Electricity_consumption", 8, 6);
     table.decimal("Tertiary_education", 8, 6);
     table.decimal("co2_per_capita", 8, 6);
+    table.decimal("2000", 8, 6);
+    table.decimal("2001", 8, 6);
+    table.decimal("2002", 8, 6);
+    table.decimal("2003", 8, 6);
+    table.decimal("2004", 8, 6);
+    table.decimal("2005", 8, 6);
+    table.decimal("2006", 8, 6);
+    table.decimal("2007", 8, 6);
+    table.decimal("2008", 8, 6);
+    table.decimal("2009", 8, 6);
+    table.decimal("2010", 8, 6);
+    table.decimal("2011", 8, 6);
+    table.decimal("2012", 8, 6);
+    table.decimal("2013", 8, 6);
+    table.decimal("2014", 8, 6);
+    table.decimal("2015", 8, 6);
+    table.decimal("2016", 8, 6);
+
   });
 };
 
