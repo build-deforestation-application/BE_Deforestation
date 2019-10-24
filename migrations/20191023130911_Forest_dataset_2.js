@@ -1,19 +1,11 @@
 exports.up = function(knex) {
   return knex.schema.createTable("ForestDatasettwo", table => {
-    table.increments("Id");
-    table.string("CountryName");
-    table.string("CountryCode");
-    table.string("Year");
-    table.string("ForestArea");
-    table.string("ForestPercofLand");
-    table.string("AgriPercentage");
-    table.string("UrbanPopulation");
-    table.string("PopulationTotal");
-    table.string("PopulationGrowthPerc");
-    table.string("GDPGrowthPerc");
-    table.string("MiningMetalExports");
-    table.string("ElectricityConsumptionkwh");
-    table.string("TertiaryEducation");
+    table.increments("queryId");
+    table
+      .bigInteger("fid")
+      .references("userId")
+      .inTable("Users");
+    table.string("queries");
   });
 };
 
