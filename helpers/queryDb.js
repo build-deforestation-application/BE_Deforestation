@@ -36,9 +36,3 @@ function remove(queryId) {
     .where("queryId", queryId.queryId)
     .del();
 }
-
-//function remove(id) {
-//   return db("Books")
-//     .where("bookId", id)
-//     .del();
-// }

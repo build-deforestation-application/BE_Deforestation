@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "server": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest --watchAll"
   },
   "repository": "https://github.com/build-deforestation-application/BE_Deforestation.git",
   "author": "<tom@edgegluer.com>",
@@ -16,6 +17,7 @@
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
     "helmet": "^3.21.1",
+    "jest": "^24.9.0",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.19.5",
     "morgan": "^1.9.1",
@@ -25,5 +27,11 @@
     "server": "^1.0.19",
     "sqlite3": "^4.1.0",
     "yarn": "^1.19.1"
+  },
+  "devDependencies": {
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvirnoment": "node"
   }
 }
