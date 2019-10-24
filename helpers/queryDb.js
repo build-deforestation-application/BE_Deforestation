@@ -15,13 +15,14 @@ function get() {
 }
 
 function getById(id) {
-  id = id.queryId
   console.log(id, "inside getByid");
-  return db("ForestDatasettwo").where("queryId", id);
+  return db("ForestDatasettwo").where("fid", id);
 }
 
 function insert(query) {
   console.log(query);
   return db("ForestDatasettwo").insert(query);
 }
+
+
 function remove() {}

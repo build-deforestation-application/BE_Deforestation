@@ -15,7 +15,8 @@ const restricted = require("../restricted");
 // });
 
 router.get("/", restricted, function(req, res) {
-  db.getById(req.body)
+  const id = req.userId;
+  db.getById(id)
     .then(data => res.status(200).json(data))
     .catch(err =>
       res
@@ -26,7 +27,12 @@ router.get("/", restricted, function(req, res) {
 
 router.post("/", restricted, function(req, res) {
   console.log(req.userId);
-  db.insert(req.body)
+  console.log(req.body);
+  data = req.body;
+  data.fid = req.userId;
+
+  console.log(data, "here is data");
+  db.insert(data)
     .then(data => res.status(200).json(data))
     .catch(err => res.status(500).json({ message: "Server error" }));
 });

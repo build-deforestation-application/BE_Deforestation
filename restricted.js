@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+require("dotenv").config();
 
 const jwt = require("jsonwebtoken");
 
@@ -10,10 +11,13 @@ const jwt = require("jsonwebtoken");
 
 const restricted = function(req, res, next) {
   const token = req.headers.authorization;
+  // console.log(token, "restricted route", req.cookies, "cookies");
   if (!token || token === null) {
     res.redirect(`/`);
   } else {
     jwt.verify(token, process.env.JWT_SECRET, function(err, decoded) {
+      console.log(token, "in verify");
+      console.log(err, decoded, "inside restricted decoder");
       if (err) {
         res.redirect("/");
       } else {
@@ -27,6 +31,5 @@ const restricted = function(req, res, next) {
       }
     });
   }
-
 };
 module.exports = restricted;
