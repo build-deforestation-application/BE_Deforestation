@@ -5,7 +5,7 @@ module.exports = {
   getById,
   // getByEmail,
   insert,
-  // update,
+  update,
   remove
 };
 
@@ -24,5 +24,21 @@ function insert(query) {
   return db("ForestDatasettwo").insert(query);
 }
 
+function update(data) {
+  console.log(data, "in the helper");
+  return db("ForestDatasettwo")
+    .where("queryId", data.queryId)
+    .update("Queries", data.queries);
+}
+function remove(queryId) {
+  console.log(queryId, "helper");
+  return db("ForestDatasettwo")
+    .where("queryId", queryId.queryId)
+    .del();
+}
 
-function remove() {}
+//function remove(id) {
+//   return db("Books")
+//     .where("bookId", id)
+//     .del();
+// }
